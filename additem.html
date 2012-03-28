@@ -2,13 +2,13 @@
 <!-- Zachery Hernandez -->
 <!-- FVW 1203 -->
 <!-- Project 1 -->
-<!-- To-Do List -->
+<!-- Body Health & Fitness -->
 <html>
 	<head>
-		<title></title>
+		<title>Body Health & Fitness</title>
 		<meta charset="utf-8" />
-		<meta keyword="" />
-		<meta description="" />
+		<meta keyword="body, health, fitness" />
+		<meta description="Get into shape or stay in shape." />
 		<meta name="robots" content="index, follow" />
 		<meta name="viewport" content="user-scalable=no, width=device-width" />
 		<meta name="viewport" content="user-scalabel=no, target-densitydpi=device-dpi" />
@@ -16,14 +16,34 @@
 	</head>
 	<body>
 		<header>
-			<h1></h1>
+			<h1>Start a new workout!</h1>
 		</header>
-		<form></form>
-		<input type="checkbox" unchecked />
-		<textarea></textarea>
-		<fieldset & legend></fieldset & legend>
-		<select & option></select & option>
-		<label></label>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Training</legend>
+				<ul>
+					<li>
+						<label for="method">Training style</label>
+						<select id="method" />
+						<optgroup label="Choose your method">
+							<option value="Cardio">Cardio</option>
+							<option value="Strength">Strength</option>
+							<option value="Tone">Tone</option>
+						</optgroup>
+						</select>
+					</li>
+					<li><label for="wname">Workout Name:</label><input type="text" id="wname" placeholder="Running, Weights..." /></li>
+					<li><label for="favorite">Is this a favorite?</label><input type="checkbox" checked value="Is this a favorite?" id="favorite" /></li>
+				</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Motivation</legend>
+					<ul>
+						<li><label for="comments">Start getting yourself motivated.</label><textarea id="comments" placeholder="Motivation starts here."></textarea></li>
+					</ul>
+			</fieldset>
+			<input type="submit" value="Add Workout!" />
+		</form>
 		<script type="text/javascript" src="nothing-yet.js"></script>
 	<footer>
 		<small>Coded by Zachery Hernandez</small>
